@@ -12,33 +12,42 @@ class CustomDrawer extends StatelessWidget {
   Widget build(BuildContext context) {
     return Container(
       color: Colors.white,
-      child: Column(
-        children: [
-          const UserInfoListTile(
-            image: Assets.imagesAvatar1,
-            title: 'Lekan Okeowo',
-            subtitle: 'demo@gmail.com',
+      child: CustomScrollView(
+        slivers: [
+          const SliverToBoxAdapter(
+            child: UserInfoListTile(
+              image: Assets.imagesAvatar1,
+              title: 'Lekan Okeowo',
+              subtitle: 'demo@gmail.com',
+            ),
           ),
-          const SizedBox(
-            height: 6,
+          const SliverToBoxAdapter(
+            child: SizedBox(
+              height: 6,
+            ),
           ),
-          const Expanded(
-            child: DrawerItemsListView(),
+          const DrawerItemsListView(),
+          SliverFillRemaining(
+            hasScrollBody: false,
+            child: Column(
+              children: [
+                const Expanded(
+                  child: SizedBox(),
+                ),
+                InActiveDrawerItem(
+                  drawerItemModel: DrawerItemModel(
+                      title: 'Setting System', image: Assets.imagesSettings),
+                ),
+                InActiveDrawerItem(
+                  drawerItemModel: DrawerItemModel(
+                      title: 'Logout Account', image: Assets.imagesLogout),
+                ),
+                const SizedBox(
+                  height: 30,
+                )
+              ],
+            ),
           ),
-          const Expanded(
-            child: SizedBox(),
-          ),
-          InActiveDrawerItem(
-            drawerItemModel: DrawerItemModel(
-                title: 'Setting System', image: Assets.imagesSettings),
-          ),
-          InActiveDrawerItem(
-            drawerItemModel: DrawerItemModel(
-                title: 'Logout Account', image: Assets.imagesLogout),
-          ),
-          const SizedBox(
-            height: 30,
-          )
         ],
       ),
     );
