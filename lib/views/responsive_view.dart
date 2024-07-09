@@ -8,10 +8,12 @@ class ResponsiveView extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      backgroundColor: const Color.fromARGB(52, 223, 224, 224),
       body: AdaptiveLayout(
-          mobileLayout: (context) => const SizedBox(),
-          tabletLayout: (context) => const SizedBox(),
-          desktopLayout:(context) => const AdaptiveDesktopLayout(),),
+        mobileLayout: (context) => const SizedBox(),
+        tabletLayout: (context) => const SizedBox(),
+        desktopLayout: (context) => const AdaptiveDesktopLayout(),
+      ),
     );
   }
 }
