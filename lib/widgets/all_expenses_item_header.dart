@@ -21,7 +21,8 @@ class AllExpensesItemHeader extends StatelessWidget {
             ),
           ),
         ),
-         const Icon(
+        const Spacer(),
+        const Icon(
           Icons.arrow_back_ios,
           color: Color(0xFF064061),
         )
