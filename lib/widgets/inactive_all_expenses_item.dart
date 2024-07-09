@@ -16,6 +16,7 @@ class InActiveAllExpensesItem extends StatelessWidget {
     return Container(
       padding: const EdgeInsets.symmetric(horizontal: 20, vertical: 16),
       decoration: ShapeDecoration(
+        color: Colors.white,
         shape: RoundedRectangleBorder(
           side: const BorderSide(
             width: 1,
@@ -31,6 +32,8 @@ class InActiveAllExpensesItem extends StatelessWidget {
         children: [
           AllExpensesItemHeader(
             image: allExpensesItemModel.image,
+            imageBackground: null,
+            imageColor: null,
           ),
           const SizedBox(
             height: 30,
