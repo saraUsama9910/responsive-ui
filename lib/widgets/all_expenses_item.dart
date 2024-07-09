@@ -14,9 +14,7 @@ class AllExpensesItem extends StatelessWidget {
         shape: RoundedRectangleBorder(
           side: const BorderSide(
             width: 1,
-            color: Color(
-              0x0ff1f1f1,
-            ),
+            color: Color.fromARGB(15, 29, 53, 119),
           ),
           borderRadius: BorderRadiusDirectional.circular(
             12,
@@ -24,7 +22,7 @@ class AllExpensesItem extends StatelessWidget {
         ),
       ),
       child: Column(
-        crossAxisAlignment: CrossAxisAlignment.start ,
+        crossAxisAlignment: CrossAxisAlignment.start,
         children: [
           AllExpensesItemHeader(
             image: allExpensesItemModel.image,
