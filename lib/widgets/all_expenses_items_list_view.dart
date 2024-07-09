@@ -40,7 +40,7 @@ class _AllExpensesItemsListViewState extends State<AllExpensesItemsListView> {
           return Expanded(
             child: GestureDetector(
               onTap: () {
-                updateIndex(index);
+                updatedIndex(index);
               },
               child: Padding(
                 padding: const EdgeInsets.symmetric(
@@ -56,7 +56,9 @@ class _AllExpensesItemsListViewState extends State<AllExpensesItemsListView> {
         } else {
           return Expanded(
             child: GestureDetector(
-              onTap: () {},
+              onTap: () {
+                updatedIndex(index);
+              },
               child: AllExpensesItem(
                 allExpensesItemModel: item,
                 isSelected: selectedIndex == index,
@@ -88,9 +90,9 @@ class _AllExpensesItemsListViewState extends State<AllExpensesItemsListView> {
     // );
   }
 
-  void updateIndex(int index) {
+  void updatedIndex(int index) {
     setState(() {
-      selectedIndex == index;
+      selectedIndex = index;
     });
   }
 }
