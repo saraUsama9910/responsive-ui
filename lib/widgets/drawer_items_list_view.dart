@@ -15,23 +15,23 @@ class DrawerItemsListView extends StatefulWidget {
 class _DrawerItemsListViewState extends State<DrawerItemsListView> {
   int activeIndex = 0;
   final List<DrawerItemModel> items = [
-     DrawerItemModel(
+    DrawerItemModel(
       image: Assets.imagesDashboard,
       title: 'Dashboard',
     ),
-     DrawerItemModel(
+    DrawerItemModel(
       image: Assets.imagesMyTransctions,
       title: 'My Transaction',
     ),
-     DrawerItemModel(
+    DrawerItemModel(
       image: Assets.imagesStatistics,
       title: 'Statistics',
     ),
-     DrawerItemModel(
+    DrawerItemModel(
       image: Assets.imagesWalletAccount,
       title: 'Wallet Account',
     ),
-     DrawerItemModel(
+    DrawerItemModel(
       image: Assets.imagesMyInvestments,
       title: 'My Investments',
     ),
@@ -40,8 +40,6 @@ class _DrawerItemsListViewState extends State<DrawerItemsListView> {
   @override
   Widget build(BuildContext context) {
     return ListView.builder(
-      shrinkWrap: true,
-      physics: const NeverScrollableScrollPhysics(),
       itemCount: items.length,
       itemBuilder: (context, index) {
         return GestureDetector(
@@ -53,12 +51,9 @@ class _DrawerItemsListViewState extends State<DrawerItemsListView> {
               });
             }
           },
-          child: Padding(
-            padding: const EdgeInsets.only(top: 20),
-            child: DrawerItem(
-              drawerItemModel: items[index],
-              isActive: activeIndex == index,
-            ),
+          child: DrawerItem(
+            drawerItemModel: items[index],
+            isActive: activeIndex == index,
           ),
         );
       },
