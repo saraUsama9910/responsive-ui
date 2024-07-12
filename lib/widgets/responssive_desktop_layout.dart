@@ -22,9 +22,7 @@ class AdaptiveDesktopLayout extends StatelessWidget {
           child: Column(
             children: [
               AllExpenses(),
-              Expanded(
-                child: QuickInvoice(),
-              ),
+              QuickInvoice(),
             ],
           ),
         ),
