@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:respons/widgets/all_expenses.dart';
 import 'package:respons/widgets/custom_drawer.dart';
+import 'package:respons/widgets/quick_invoice.dart';
 
 class AdaptiveDesktopLayout extends StatelessWidget {
   const AdaptiveDesktopLayout({super.key});
@@ -17,10 +18,13 @@ class AdaptiveDesktopLayout extends StatelessWidget {
           width: 32,
         ),
         Expanded(
-          flex: 2,
+          flex: 3,
           child: Column(
             children: [
-              Expanded(child: AllExpenses()),
+              AllExpenses(),
+              Expanded(
+                child: QuickInvoice(),
+              ),
             ],
           ),
         ),
@@ -28,4 +32,3 @@ class AdaptiveDesktopLayout extends StatelessWidget {
     );
   }
 }
-
