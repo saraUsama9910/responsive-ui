@@ -24,6 +24,7 @@ class LatestTransactionListView extends StatelessWidget {
   ];
   @override
   Widget build(BuildContext context) {
+    return Row();
     return SizedBox(
       height: 80,
       child: ListView.builder(
