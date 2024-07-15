@@ -15,7 +15,7 @@ class QuickInvoice extends StatelessWidget {
           QuickInvoiceHeader(),
           LatestTransaction(),
           Divider(
-            height: 48,
+            height: 24,
           ),
           CustomTextField(),
         ],

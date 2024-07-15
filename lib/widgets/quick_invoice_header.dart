@@ -16,8 +16,8 @@ class QuickInvoiceHeader extends StatelessWidget {
         ),
         const Spacer(),
         Container(
-          height: 48,
-          width: 48,
+          height: 24,
+          width: 24,
           decoration: const ShapeDecoration(
             shape: OvalBorder(),
             color: Color(
