@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:respons/utils/app_styles.dart';
+import 'package:respons/widgets/latest_transaction_list_view.dart';
 
 class LatestTransaction extends StatelessWidget {
   const LatestTransaction({super.key});
@@ -7,6 +8,7 @@ class LatestTransaction extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Column(
+      crossAxisAlignment: CrossAxisAlignment.start,
       children: [
         Text(
           'Latest Transaction',
@@ -17,6 +19,7 @@ class LatestTransaction extends StatelessWidget {
         const SizedBox(
           height: 16,
         ),
+        const LatestTransactionListView()
       ],
     );
   }
