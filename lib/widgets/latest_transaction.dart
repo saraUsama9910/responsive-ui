@@ -16,7 +16,7 @@ class LatestTransaction extends StatelessWidget {
             context,
           ),
         ),
-        const SizedBox(height: 10),
+        const SizedBox(height: 5),
         const LatestTransactionListView()
       ],
     );
