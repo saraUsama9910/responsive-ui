@@ -19,14 +19,16 @@ class AdaptiveDesktopLayout extends StatelessWidget {
         ),
         Expanded(
           flex: 2,
-          child: Column(
-            children: [
-              AllExpenses(),
-              SizedBox(
-                height: 5,
-              ),
-              QuickInvoice(),
-            ],
+          child: SingleChildScrollView(
+            child: Column(
+              children: [
+                AllExpenses(),
+                SizedBox(
+                  height: 5,
+                ),
+                QuickInvoice(),
+              ],
+            ),
           ),
         ),
       ],
