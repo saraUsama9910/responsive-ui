@@ -9,7 +9,7 @@ class rangeOptions extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      padding: const EdgeInsets.all(12),
+      padding: const EdgeInsets.all(2),
       decoration: ShapeDecoration(
         color: Colors.white,
         shape: RoundedRectangleBorder(
