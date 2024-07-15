@@ -15,15 +15,15 @@ class AdaptiveDesktopLayout extends StatelessWidget {
           child: CustomDrawer(),
         ),
         SizedBox(
-          width: 32,
+          width: 24,
         ),
         Expanded(
-          flex: 3,
+          flex: 2,
           child: Column(
             children: [
               AllExpenses(),
               SizedBox(
-                height: 24,
+                height: 12,
               ),
               QuickInvoice(),
             ],

@@ -14,7 +14,7 @@ class AllExpenses extends StatelessWidget {
         children: [
           AllExpensesHeader(),
           SizedBox(
-            height: 16,
+            height: 10,
           ),
           AllExpensesItemsListView()
         ],
