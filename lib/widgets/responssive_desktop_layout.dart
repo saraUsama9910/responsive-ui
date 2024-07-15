@@ -23,7 +23,7 @@ class AdaptiveDesktopLayout extends StatelessWidget {
             children: [
               AllExpenses(),
               SizedBox(
-                height: 12,
+                height: 5,
               ),
               QuickInvoice(),
             ],
