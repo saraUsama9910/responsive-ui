@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:respons/widgets/all_expenses_and_quick_invoice_section.dart';
-import 'package:respons/widgets/custom_dot_indicator.dart';
 import 'package:respons/widgets/custom_drawer.dart';
+import 'package:respons/widgets/dots_indicator.dart';
 
 class AdaptiveDesktopLayout extends StatelessWidget {
   const AdaptiveDesktopLayout({super.key});
@@ -26,7 +26,7 @@ class AdaptiveDesktopLayout extends StatelessWidget {
         SizedBox(
           width: 24,
         ),
-        CustomDotIndicator()
+        DotsIndicator(),
       ],
     );
   }
