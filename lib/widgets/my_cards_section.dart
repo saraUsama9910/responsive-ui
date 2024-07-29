@@ -18,10 +18,8 @@ class _MyCardsSectionState extends State<MyCardsSection> {
     pageController = PageController();
     pageController.addListener(
       () {
-        currentPageIndex = pageController.page!.toInt();
-        setState(() {
-          
-        });
+        currentPageIndex = pageController.page!.round();
+        setState(() {});
       },
     );
     // TODO: implement initState
@@ -44,11 +42,15 @@ class _MyCardsSectionState extends State<MyCardsSection> {
         const SizedBox(
           height: 20,
         ),
-         MyCardsPageView(pageController:pageController,),
+        MyCardsPageView(
+          pageController: pageController,
+        ),
         const SizedBox(
           height: 20,
         ),
-         DotsIndicator(currentPageIndex: currentPageIndex,)
+        DotsIndicator(
+          currentPageIndex: currentPageIndex,
+        )
       ],
     );
   }
