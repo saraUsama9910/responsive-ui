@@ -10,6 +10,23 @@ class IncomeChart extends StatelessWidget {
   }
 
   PieChartData getChartData() {
-    return PieChartData();
+    return PieChartData(sections: [
+      PieChartSectionData(
+        value: 40,
+        color: const Color(0xFF208BC7),
+      ),
+       PieChartSectionData(
+        value: 25,
+        color: const Color(0xFF4EB7F2),
+      ),
+       PieChartSectionData(
+        value: 20,
+        color: const Color(0xFF064061),
+      ),
+       PieChartSectionData(
+        value: 22,
+        color: const Color(0xFFE2DECD),
+      ),
+    ]);
   }
 }
