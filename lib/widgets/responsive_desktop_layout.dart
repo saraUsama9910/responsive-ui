@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:respons/widgets/all_expenses_and_quick_invoice_section.dart';
 import 'package:respons/widgets/custom_drawer.dart';
-import 'package:respons/widgets/transaction_history.dart';
+import 'package:respons/widgets/my_cards_and_transaction_history_section.dart';
 
 class AdaptiveDesktopLayout extends StatelessWidget {
   const AdaptiveDesktopLayout({super.key});
@@ -26,7 +26,7 @@ class AdaptiveDesktopLayout extends StatelessWidget {
         SizedBox(
           width: 24,
         ),
-        Expanded(child: TransactionHistory())
+        Expanded(child: MyCardsAndTransactionHistorySection())
       ],
     );
   }

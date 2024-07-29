@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:respons/widgets/adaptive_layout_widget.dart';
-import 'package:respons/widgets/responssive_desktop_layout.dart';
+import 'package:respons/widgets/responsive_desktop_layout.dart';
 
 class ResponsiveView extends StatelessWidget {
   const ResponsiveView({super.key});
