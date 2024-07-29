@@ -30,8 +30,10 @@ environment:
 dependencies:
   cupertino_icons: ^1.0.8
   expandable_page_view: ^1.0.17
+  fl_chart: ^0.68.0
   flutter:
     sdk: flutter
+  flutter_flow_chart: ^3.1.1
   flutter_svg: ^2.0.10+1
 
 dev_dependencies:

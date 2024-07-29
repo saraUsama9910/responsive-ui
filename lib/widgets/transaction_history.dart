@@ -13,7 +13,7 @@ class TransactionHistory extends StatelessWidget {
       children: [
         const TransactionHistoryHeader(),
         const SizedBox(
-          height: 20,
+          height: 1,
         ),
         Text(
           '14 April 2022',

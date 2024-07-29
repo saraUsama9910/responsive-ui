@@ -8,7 +8,7 @@ class TransactionItem extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Card(
-      color: Colors.white,
+      color: const Color.fromARGB(255, 245, 244, 244),
       elevation: 0,
       shape: RoundedRectangleBorder(
         borderRadius: BorderRadius.circular(
