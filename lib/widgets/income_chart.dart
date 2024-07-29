@@ -1,3 +1,4 @@
+import 'package:fl_chart/fl_chart.dart';
 import 'package:flutter/material.dart';
 
 class IncomeChart extends StatelessWidget {
@@ -5,6 +6,10 @@ class IncomeChart extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return PieChart ();
+    return PieChart(getChartData());
+  }
+
+  PieChartData getChartData() {
+    return PieChartData();
   }
 }
