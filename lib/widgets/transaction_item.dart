@@ -2,8 +2,8 @@ import 'package:flutter/material.dart';
 import 'package:respons/models/transaction_model.dart';
 import 'package:respons/utils/app_styles.dart';
 
-class TranactionItem extends StatelessWidget {
-  const TranactionItem({super.key, required this.transactionModel});
+class TransactionItem extends StatelessWidget {
+  const TransactionItem({super.key, required this.transactionModel});
   final TransactionModel transactionModel;
   @override
   Widget build(BuildContext context) {
