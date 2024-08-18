@@ -4,8 +4,8 @@ import 'package:respons/widgets/custom_drawer.dart';
 import 'package:respons/widgets/income_section.dart';
 import 'package:respons/widgets/my_cards_and_transaction_history_section.dart';
 
-class AdaptiveDesktopLayout extends StatelessWidget {
-  const AdaptiveDesktopLayout({super.key});
+class ResponsiveDesktopLayout extends StatelessWidget {
+  const ResponsiveDesktopLayout({super.key});
 
   @override
   Widget build(BuildContext context) {

@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:respons/widgets/all_expenses_and_quick_invoice_section.dart';
 import 'package:respons/widgets/custom_drawer.dart';
+import 'package:respons/widgets/responsive_mobile_layout.dart';
 
 class ResponsiveTabletLayout extends StatelessWidget {
   const ResponsiveTabletLayout({super.key});
@@ -15,7 +15,7 @@ class ResponsiveTabletLayout extends StatelessWidget {
         ),
         Expanded(
           flex: 3,
-          child: AllExpensesAndQuickInvoiceSection(),
+          child: ResponsiveMobileLayout(),
         ),
         SizedBox(
           height: 32,
