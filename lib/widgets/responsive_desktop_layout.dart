@@ -19,7 +19,7 @@ class AdaptiveDesktopLayout extends StatelessWidget {
           width: 5,
         ),
         Expanded(
-          flex: 2,
+          flex: 3,
           child: SingleChildScrollView(
             child: AllExpensesAndQuickInvoiceSection(),
           ),
@@ -28,12 +28,14 @@ class AdaptiveDesktopLayout extends StatelessWidget {
           width: 5,
         ),
         Expanded(
+            flex: 2,
             child: Column(
-          children: [
-            SingleChildScrollView(child: MyCardsAndTransactionHistorySection()),
-            Expanded(child: IncomeSection())
-          ],
-        ))
+              children: [
+                SingleChildScrollView(
+                    child: MyCardsAndTransactionHistorySection()),
+                Expanded(child: IncomeSection())
+              ],
+            ))
       ],
     );
   }

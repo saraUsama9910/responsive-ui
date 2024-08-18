@@ -9,11 +9,11 @@ class MyCard extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return AspectRatio(
-      aspectRatio: 420 / 215,
+      aspectRatio: 420 / 185,
       child: Container(
         decoration: ShapeDecoration(
           image: const DecorationImage(
-            fit: BoxFit.fill,
+            fit: BoxFit.contain,
             image: AssetImage(
               Assets.imagesCardBackground,
             ),

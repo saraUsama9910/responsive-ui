@@ -19,8 +19,11 @@ class IncomeDetails extends StatelessWidget {
       shrinkWrap: true,
       itemCount: items.length,
       itemBuilder: (context, index) {
-        return ItemDetails(
-          itemDetailsModel: items[index],
+        return SizedBox(
+          width: 200,
+          child: ItemDetails(
+            itemDetailsModel: items[index],
+          ),
         );
       },
     );

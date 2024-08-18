@@ -10,9 +10,9 @@ class DotsIndicator extends StatelessWidget {
       crossAxisAlignment: CrossAxisAlignment.start,
       children: List.generate(
         3,
-        (index) =>  Padding(
-          padding: EdgeInsets.only(right: 5),
-          child: CustomDotIndicator(isActive: index==currentPageIndex),
+        (index) => Padding(
+          padding: const EdgeInsets.only(right: 5),
+          child: CustomDotIndicator(isActive: index == currentPageIndex),
         ),
       ),
     );
