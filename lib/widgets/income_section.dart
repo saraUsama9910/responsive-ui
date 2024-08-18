@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:respons/widgets/custom_background_container.dart';
 import 'package:respons/widgets/income_chart.dart';
+import 'package:respons/widgets/income_details.dart';
 import 'package:respons/widgets/income_section_header.dart';
 
 class IncomeSection extends StatelessWidget {
@@ -18,6 +19,7 @@ class IncomeSection extends StatelessWidget {
                 Expanded(
                   child: IncomeChart(),
                 ),
+                Expanded(child: IncomeDetails())
               ],
             ),
           )
