@@ -12,28 +12,40 @@ class ResponsiveDesktopLayout extends StatelessWidget {
     return const Row(
       children: [
         Expanded(
-          flex: 1,
           child: CustomDrawer(),
         ),
         SizedBox(
           width: 5,
         ),
         Expanded(
-          flex: 3,
-          child: SingleChildScrollView(
-            child: AllExpensesAndQuickInvoiceSection(),
-          ),
-        ),
-        SizedBox(
-          width: 5,
-        ),
-        Expanded(
-            flex: 2,
-            child: Column(
-              children: [
-                SingleChildScrollView(
-                    child: MyCardsAndTransactionHistorySection()),
-                Expanded(child: IncomeSection())
+            flex: 3,
+            child: CustomScrollView(
+              slivers: [
+                SliverFillRemaining(
+                  hasScrollBody: false,
+                  child: Row(
+                    children: [
+                      Expanded(
+                        flex: 3,
+                        child: SingleChildScrollView(
+                          child: AllExpensesAndQuickInvoiceSection(),
+                        ),
+                      ),
+                      SizedBox(
+                        width: 5,
+                      ),
+                      Expanded(
+                          flex: 2,
+                          child: Column(
+                            children: [
+                              SingleChildScrollView(
+                                  child: MyCardsAndTransactionHistorySection()),
+                              Expanded(child: IncomeSection())
+                            ],
+                          ))
+                    ],
+                  ),
+                )
               ],
             ))
       ],
