@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:respons/widgets/all_expenses_and_quick_invoice_section.dart';
 import 'package:respons/widgets/custom_drawer.dart';
 import 'package:respons/widgets/income_section.dart';
+import 'package:respons/widgets/my_cards_and_transaction_history_section.dart';
 
 class AdaptiveDesktopLayout extends StatelessWidget {
   const AdaptiveDesktopLayout({super.key});
@@ -15,7 +16,7 @@ class AdaptiveDesktopLayout extends StatelessWidget {
           child: CustomDrawer(),
         ),
         SizedBox(
-          width: 32,
+          width: 5,
         ),
         Expanded(
           flex: 2,
@@ -24,9 +25,15 @@ class AdaptiveDesktopLayout extends StatelessWidget {
           ),
         ),
         SizedBox(
-          width: 24,
+          width: 5,
         ),
-        Expanded(child: IncomeSection())
+        Expanded(
+            child: Column(
+          children: [
+            SingleChildScrollView(child: MyCardsAndTransactionHistorySection()),
+            Expanded(child: IncomeSection())
+          ],
+        ))
       ],
     );
   }
